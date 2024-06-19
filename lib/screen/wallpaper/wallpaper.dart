@@ -10,8 +10,10 @@ class WallpaperScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
-        title: const Text('Wallpaper App'),
+        backgroundColor: Colors.black,
+        title: const Text('Wallpaper App',style: TextStyle(color: Colors.white),),
       ),
       body: RepaintBoundary(
         key: imgKey,

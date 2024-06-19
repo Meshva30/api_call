@@ -17,7 +17,7 @@ Future<void> setWallpaper(BuildContext context, int wallpaperLocation) async {
     await AsyncWallpaper.setWallpaperFromFile(
       filePath: fileImg!.path,
       wallpaperLocation: wallpaperLocation,
-      goToHome: false, // Set to false to prevent redirection
+      goToHome: false,
       toastDetails: ToastDetails.success(),
       errorToastDetails: ToastDetails.error(),
     );
